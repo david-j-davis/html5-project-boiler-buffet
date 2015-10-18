@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'OpensansLight';
+  src: url('fonts/Open_Sans/OpenSans-Light-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Open_Sans/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Open_Sans/OpenSans-Light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Open_Sans/OpenSans-Light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Open_Sans/OpenSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Open_Sans/OpenSans-Light-webfont.svg#OpenSans-Light') format('svg'); /* Legacy iOS */
+   }
+@font-face {
+  font-family: 'OpensansRegular';
+  src: url('fonts/Open_Sans/OpenSans-Regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Open_Sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Open_Sans/OpenSans-Regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Open_Sans/OpenSans-Regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Open_Sans/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Open_Sans/OpenSans-Regular-webfont.svg#OpenSans-Regular') format('svg'); /* Legacy iOS */
+   }
+@font-face {
+  font-family: 'OpensansBold';
+  src: url('fonts/Open_Sans/OpenSans-Bold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Open_Sans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Open_Sans/OpenSans-Bold-webfont-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Open_Sans/OpenSans-Bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Open_Sans/OpenSans-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Open_Sans/OpenSans-Bold-webfont.svg#OpenSans-Bold') format('svg'); /* Legacy iOS */
+   }
+@font-face {
+  font-family: 'FrancoisOne';
+  src: url('fonts/Francois_One/FrancoisOne-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Francois_One/FrancoisOne-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Francois_One/FrancoisOne-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Francois_One/FrancoisOne-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Francois_One/FrancoisOne.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Francois_One/FrancoisOne-webfont.svg#FrancoisOne') format('svg'); /* Legacy iOS */
+   }
+@font-face {
+  font-family: 'Cantarell-Regular';
+  src: url('fonts/Cantarell/Cantarell-Regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Cantarell/Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Cantarell/Cantarell-Regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Cantarell/Cantarell-Regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Cantarell/Cantarell-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Cantarell/Cantarell-Regular-webfont.svg#Cantarell-Regular') format('svg'); /* Legacy iOS */
+   }
+@font-face {
+  font-family: 'Cantarell-Bold';
+  src: url('fonts/Cantarell/Cantarell-Bold-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Cantarell/Cantarell-Bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Cantarell/Cantarell-Bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Cantarell/Cantarell-Bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Cantarell/Cantarell-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Cantarell/Cantarell-Bold-webfont.svg#Cantarell-Bold') format('svg'); /* Legacy iOS */
+   }
+@font-face {
+  font-family: 'Cantarell-Oblique';
+  src: url('fonts/Cantarell/Cantarell-Oblique-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Cantarell/Cantarell-Oblique-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Cantarell/Cantarell-Oblique-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Cantarell/Cantarell-Oblique-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Cantarell/Cantarell-Oblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Cantarell/Cantarell-Oblique-webfont.svg#Cantarell-Oblique') format('svg'); /* Legacy iOS */
+   }
+@font-face {
+  font-family: 'Cantarell-BoldOblique';
+  src: url('fonts/Cantarell/Cantarell-BoldOblique-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Cantarell/Cantarell-BoldOblique-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Cantarell/Cantarell-BoldOblique-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Cantarell/Cantarell-BoldOblique-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Cantarell/Cantarell-BoldOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Cantarell/Cantarell-BoldOblique-webfont.svg#Cantarell-BoldOblique') format('svg'); /* Legacy iOS */
+   }

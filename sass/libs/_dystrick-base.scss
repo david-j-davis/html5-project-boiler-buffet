@@ -1,0 +1,98 @@
+/* Base
+------------------------------------------------- */
+
+//Variables
+$orange: #f15d22;
+$grey: #191919;
+$medgrey: #252525;
+$ltgrey: #5a5a5a;
+$headerfont: 'SourceSans', sans-serif;
+$subheaderfont: 'Montserrat', sans-serif;
+$bodyfont: 'SourceSans', sans-serif;
+
+$pad: 1.429em; //20px
+
+$default-text-shadow-color: black;
+$default-text-shadow-blur: 10px;
+
+
+body {
+    overflow-x:hidden; /* overflow hidden for mobile issues */
+    line-height: 1.2;
+	  background: #ffffff;
+	  color: #000000;
+	  font-size: 100%;
+	  font-family: $bodyfont;
+    font-weight: 200;
+
+     .container {
+      margin: 0 auto;
+      position: relative;
+      //@include clearfix;
+    }//End container
+}
+
+h1, h2, h3, h4, h5, h6 {line-height:1;color: #000000; margin-top: 0;}
+
+h1 {
+  font-size:6.250em;
+  font-family: $headerfont;
+  font-weight: 700;
+  &.white {color: #ffffff;}
+}
+h2 {
+  font-size:2.250em; 
+  font-family: $subheaderfont;
+  font-weight: 400;
+  &.white {color: #ffffff;}
+}
+h3 {
+  font-size:1.50em; 
+  font-family: $subheaderfont;
+  font-weight: 400;
+  &.white {color: #ffffff;}
+}
+h4 {
+  font-size:1.125em;
+  font-family: $subheaderfont;
+  font-weight: 400;
+  &.white {color: #ffffff;}
+}
+h5 {
+  font-size:1em;
+  font-family: $subheaderfont;
+  font-weight: 400;
+  &.white {color: #ffffff;}
+}
+
+p {
+  font-size:1em; 
+  margin-top: 0;
+  &.white {color: #ffffff;}
+
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    @media screen and (min-width: $desktop) {
+      @include transition-property(all);
+      @include transition-duration(0.2s);
+      @include transition-timing-function(ease);
+    }
+    &:active,
+    &:hover {
+    outline: 0;
+    }
+}
+button, .button {@include button;}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 3em;
+    padding: 0;
+}
+

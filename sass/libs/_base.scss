@@ -1,0 +1,172 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+
+    font-size: 14px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.25),
+    only screen and ( min-device-pixel-ratio: 1.25),
+    only screen and ( min-resolution: 200dpi),
+    only screen and ( min-resolution: 1.25dppx)
+    {
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: transparent;
+    text-shadow: none;
+}
+
+::selection {
+    background: transparent;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+//========================
+// Variables
+//========================
+
+$orange: #fd7235;
+
+$headerfont: 'OpensansRegular', sans-serif;
+$bodyfont: 'OpensansLight', sans-serif;
+
+$pad: 1.429em; //20px
+
+//========================
+// Mixins
+//========================
+
+@mixin clearfix {
+ // For modern browsers
+  &:before,
+  &:after {
+    content:"";
+    display:table;
+  }  &:after {
+    clear:both;
+  }  // For IE 6/7 (trigger hasLayout)
+  & {
+    zoom:1;
+  }
+}
+
+//========================
+// Typography
+//========================
+
+h1, h2, h3, h4, h5, h6 {font-family: $headerfont;line-height:1em;color: #000000; margin-top: 0;}
+
+h1 {
+  font-size:2.75em;
+  color: $orange;
+  &.white {color: #ffffff;}
+}
+h2 {
+  font-size:1.875em; 
+  &.white {color: #ffffff;}
+}
+h3 {
+  font-size:1.375em; 
+  &.white {color: #ffffff;}
+}
+h4 {
+  font-size:1em;
+  &.white {color: #ffffff;}
+}
+h5 {
+  font-size:0.8em;
+  &.white {color: #ffffff;}
+}
+
+p {
+  font-family: $bodyfont; 
+  font-size:1em; 
+  color: #000000;
+  margin-top: 0;
+  &.white {color: #ffffff;}
+
+}
+
+a {
+    text-decoration: none;
+    @media screen and (min-width: $desktop) {
+      @include transition-property(all);
+      @include transition-duration(0.2s);
+      @include transition-timing-function(ease);
+    }
+}

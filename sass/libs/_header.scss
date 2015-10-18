@@ -1,0 +1,18 @@
+/* Header
+------------------------------------------------- */
+
+header {
+  
+  height:130px; 
+  @include transition-property(all);
+  @include transition-duration(0.5s);
+  @include transition-timing-function(ease);
+  //@include clearfix;
+
+  .container {
+    position: relative;
+    width: 100%;
+  }
+
+ 
+}//End header

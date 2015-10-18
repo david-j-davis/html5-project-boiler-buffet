@@ -1,0 +1,79 @@
+@import 'compass/css3';
+//@import 'libs/normalize';
+@import 'libs/reset';
+@import 'libs/fonts';
+@import 'libs/mq';
+@import 'libs/mixins';
+@import 'libs/animation';
+//@import 'libs/base';
+@import 'libs/dystrick-base';
+@import 'libs/header';
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	height: auto;
+
+	@media screen and (min-width: $desktop) {
+	width: $max-width;
+	}
+}
+
+
+
+.module {
+	
+	height: auto;
+	padding-top: 70px;
+	padding-bottom: 60px;
+	margin: 0 auto;
+	@include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease);
+	@include clearfix;
+
+}
+
+/* --------------------- */
+
+.hero {
+	padding-top: 100px;
+	
+	&.center {
+	text-align: center;
+	}
+	&.left {
+		text-align: left;
+	}
+
+	h1 {text-align: left;}
+	img {
+		width:100%; height:auto; max-height: 419px; margin:30px 0;
+
+		&.left {}
+	}
+
+	.copy-left {
+		width: 100%;
+		text-align: left;
+		
+	}
+	.copy-right {
+		width: 100%;
+		text-align: left;
+		
+	}
+
+	
+	border-bottom: 10px solid #e3e3e3;
+}
+
+/* --------------------- */
+/* --------------------- */
+/* --------------------- */
+/* --------------------- */
+
+@import 'libs/footer';
+@import 'libs/ie-fixes';
+

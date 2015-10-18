@@ -1,0 +1,80 @@
+@import 'compass/css3';
+//@import 'libs/normalize';
+@import 'libs/reset';
+@import 'libs/fonts';
+@import 'libs/mq';
+@import 'libs/mixins';
+@import 'libs/animation';
+//@import 'libs/base';
+@import 'libs/dystrick-base';
+@import 'libs/header';
+
+
+/* Section Modules
+------------------------------------------------- */
+.module {
+	 
+	@include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease);
+	@include clearfix;
+
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: $max-width;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/*The following is a modular approach for specific projects where you know the client wants to be able to move sections around using ACF Flexible layout
+/* The idea is instead of a container around the whole body, each module has it's own container inside- adjust it's size accordingly, I like to break out
+/* text inside of modules in a copy class div. For more info on this specific mixin and approach visit: 
+
+/* --------------------- */
+
+.module {
+    @include c(banner) {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: left;
+        padding-bottom: 4px;
+
+         @include m(container) {
+            width: $max-width;
+        }
+
+   
+        @include l(copy) {
+                position: absolute;
+                bottom: 70px;
+                width: 100% !important;
+               // max-width: 525px;
+                display: inline-block;
+                margin-left: 70px;
+
+
+                
+            }
+       
+    }
+}
+/* --------------------- */
+
+/* --------------------- */
+
+/* --------------------- */
+
+/* --------------------- */
+
+/* --------------------- */
+
+
+/* --------------------- */
+
+@import 'libs/footer';
+@import 'libs/ie-fixes';
